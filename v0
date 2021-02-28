@@ -23,14 +23,15 @@ str_md5(){
 _ccmd_help(){
     local IFS=
 
-    if [ $# -eq 0 ]; then
-    printf "%s
+    if [ $# -ne 0 ]; then
+        printf "%s
 ------------------\n" "$@"
     fi
 
     printf '
 ccmd -- cache the command result.
-From cache:
+
+Please visit following websites for more information:
     https://gitee.com/x-bash/cache
     https://github.com/x-bash/cache
 
